@@ -1,16 +1,35 @@
-$primary-color: goldenrod;
+$primary-color: #cbab7c;
 $secondary-color: #242526;
 $text-color: white;
 $font-base: 'Raleway', sans-serif;
 
 @mixin round-btn($bg-color: $primary-color) {
   padding: 10px 25px;
-  border: 1px solid white;
   border-radius: 20px;
   background-color: $bg-color;
   font-family: $font-base;
   font-size: small;
   text-align: center;
+  font-family: Raleway;
+}
+
+@mixin title-text($f-color : white)
+{
+    font-family: Libre Baskerville;
+    font-weight: 100;
+    color: $f-color;
+}
+
+@mixin desc-text($f-color : white)
+{
+    font-family: Raleway;
+    color: $f-color;
+}
+
+
+
+.round-btn{
+    @include round-btn($primary-color)
 }
 
 
@@ -37,9 +56,7 @@ body{
     top: 0;
     background-color: rgba(0, 0, 0, 0.7);
     height: 110px;
-}
-
-.nav-menu ul{
+&__list{
     list-style-type: none;
     display: flex;
     font-family: Raleway;
@@ -48,82 +65,112 @@ body{
     position: sticky;
     top: 30px;
     z-index: 999;
-}
-
-
-.nav-menu ul li a{
+ }
+ &__link{
     text-decoration: none;
     color: white;
     font-size: 18px;
-}
 
-#logo-heading{
+ }
+
+ &__logo{
     font-family: 'Times New Roman', Times, serif;
     font-weight: lighter;
     font-size: 30px;
     line-height: 1;
-}
 
-#logo-heading span{
+ }
+
+ &__icon{
     font-size: 25px;
+ }
+
 }
 
-#home{
+
+// #logo-heading span{
+//     font-size: 25px;
+// }
+
+.home{
     margin-top: 60px;
-    
-}
 
-.reservations-sub{
+&__reservations-sub{
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
     color: white;
-    border: 1px solid yellow;
+    border: 1px solid $primary-color;
     border-radius: 20px;
     font-family: Raleway;
     font-size: 13px;
     display: inline;
-}
+ }
 
-.ad{
+ &__ad{
     display: flex;
-}
+    &__text-ad{
+        flex: 1;
+        padding-right: 30px;
 
-.text-ad{
-    flex: 1;
-    padding-right: 30px;
-}
-
-.text-ad h1{
+        h1{
     font-size: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: Libre Baskerville;
+        }
+
+        &__description-text{
+    line-height: 2;
+    font-family: Raleway;
 }
+
+
+        &__open-timing{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Raleway;
+    font-weight: bold;
+    i{
+    margin-right: 10px;
+    height: 30px;
+}
+}
+
+&__home-btns{
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    width: 100%;
+    margin-right: 25px;
+
+}
+    }
+
+    &__photo-ad{
+    flex: 1;
+    background-color: $primary-color;
+}
+
+ }
+
+
+}
+
+// About section
 
 .description-text{
     line-height: 2;
     font-family: Raleway;
 }
 
+
 .italic-text{
     line-height: 2;
     font-family: Raleway;
     font-style: italic;
     width: 100%;
-}
-
-.open-timing{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-family: Raleway;
-    font-weight: bold;
-}
-
-.open-timing i{
-    margin-right: 10px;
-    height: 30px;
 }
 
 .home-btns{
@@ -145,7 +192,7 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 5px;
-    background-color: goldenrod;
+    background-color: $primary-color;
     font-family: Raleway;
     font-weight: bold;
 }
@@ -163,10 +210,7 @@ body{
     font-weight: bold;
 }
 
-.photo-ad{
-    flex: 1;
-    background-color: gold;
-}
+
 
 .socials{
     margin-top: 30px;
@@ -213,7 +257,7 @@ body{
     width: 70px;
     margin: 10px;
     margin-left: 0px;
-    background-color: goldenrod;
+    background-color: $primary-color;
 }
 
 .card{
@@ -229,7 +273,7 @@ body{
 
 .card img{
     border-radius: 50%;
-    border: 3px solid goldenrod;
+    border: 3px solid $primary-color;
 }
 
 .card div div{
@@ -265,7 +309,7 @@ body{
 
 hr{    
     height: 0.1px;
-    background-color: goldenrod;
+    background-color:$primary-color;
     margin-right: 70px;
 }
 
@@ -278,7 +322,11 @@ hr{
 
 .left-footer{
     flex: 2;
+    h1{
+        @include title-text(white)
+    }
 }
+
 
 .footer-right-2, .footer-right-3, .footer-right-1{
     flex: 1;
@@ -307,21 +355,10 @@ hr{
     margin-bottom: 30px;
 }
 
-.round-btn{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border: 1px solid white;
-    border-radius: 20px;
-    background-color: goldenrod;
-    font-family: Raleway;
-    font-size: small;
-}
+
 
 .gold-circle{
-    background-color: goldenrod;
+    background-color: $primary-color;
     display: flex;
     height: 100px;
     width: 100px;
@@ -471,7 +508,7 @@ hr{
     padding-bottom: 2px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: goldenrod;
+    background-color: $primary-color;
     border-radius: 25px;
     display: inline;
     font-size: 14px;
@@ -503,7 +540,7 @@ hr{
 }
 
 .price{
-    color: goldenrod;
+    color: $primary-color;
     font-weight: bold;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -521,7 +558,7 @@ hr{
     padding-right: 25px;
     border: 1px solid white;
     border-radius: 20px;
-    background-color: goldenrod;
+    background-color: $primary-color;
     font-family: Raleway;
     font-size: small;
     margin-left: -80px;
@@ -684,7 +721,7 @@ font-family: Libre Baskerville;
 }
 
 .chef-title{
-    color: goldenrod;
+    color: $primary-color;
     font-size: 20px;
     font-family: Libre Baskerville;
     margin: 5px;
@@ -862,7 +899,7 @@ font-family: Libre Baskerville;
 }
 
 .location h1,h2{
-    font-family: Libre Baskerville;
+    @include title-text(white)
 }
 
 .location p{
@@ -923,8 +960,7 @@ table td{
 }
 
 .moments-1 h1{
-    font-size: 40px;
-    font-family: Libre Baskerville;
+    @include title-text(white)
 }
 
 .moments-1 .italic-text{
@@ -1031,7 +1067,7 @@ table td{
 }
 
 .text-plan h1{
-    font-family: Libre Baskerville;
+    @include title-text(white);
     margin: 20px;
 }
 
@@ -1069,7 +1105,7 @@ table td{
 }
 
 .events-1 h1{
-    font-family: Libre Baskerville;
+    @include title-text(white)
 }
 
 .events-2{
@@ -1112,7 +1148,7 @@ table td{
 .event-details h1 {
   font-size: 18px;
   margin-bottom: 8px;
-  font-family: Libre Baskerville;
+  @include title-text(white);
 }
 
 .event-details table {
@@ -1154,7 +1190,7 @@ table td{
 }
 
 .heading h1{
-    font-family: Libre Baskerville;
+    @include title-text(white)
 }
 
 .contact-cards-container{
@@ -1192,7 +1228,7 @@ table td{
 }
 
 .contact-desc h2{
-    font-family: Libre Baskerville;
+    @include title-text(white);
     font-size: 20px;
 }
 
@@ -1201,3 +1237,4 @@ table td{
     font-size: 15px;
     color: #b4b5ba;
 }
+
