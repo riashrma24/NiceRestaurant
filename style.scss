@@ -1,0 +1,1203 @@
+$primary-color: goldenrod;
+$secondary-color: #242526;
+$text-color: white;
+$font-base: 'Raleway', sans-serif;
+
+@mixin round-btn($bg-color: $primary-color) {
+  padding: 10px 25px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: $bg-color;
+  font-family: $font-base;
+  font-size: small;
+  text-align: center;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0C0D11;
+    color: white;
+}
+
+.main-container{
+    margin-left: 80px;
+}
+
+.nav-menu{
+    padding-right: 55px;
+    margin-top: 25px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 110px;
+}
+
+.nav-menu ul{
+    list-style-type: none;
+    display: flex;
+    font-family: Raleway;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 30px;
+    z-index: 999;
+}
+
+
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+#logo-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 1;
+}
+
+#logo-heading span{
+    font-size: 25px;
+}
+
+#home{
+    margin-top: 60px;
+    
+}
+
+.reservations-sub{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    border: 1px solid yellow;
+    border-radius: 20px;
+    font-family: Raleway;
+    font-size: 13px;
+    display: inline;
+}
+
+.ad{
+    display: flex;
+}
+
+.text-ad{
+    flex: 1;
+    padding-right: 30px;
+}
+
+.text-ad h1{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Libre Baskerville;
+}
+
+.description-text{
+    line-height: 2;
+    font-family: Raleway;
+}
+
+.italic-text{
+    line-height: 2;
+    font-family: Raleway;
+    font-style: italic;
+    width: 100%;
+}
+
+.open-timing{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+.open-timing i{
+    margin-right: 10px;
+    height: 30px;
+}
+
+.home-btns{
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    width: 100%;
+}
+
+.text-ad .home-btns{
+    margin-right: 25px;
+}
+
+.square-btn{
+    flex: 1;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+.explore-menu{
+    flex: 1;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid white;
+    border-radius: 5px;
+    font-family: Raleway;
+    font-weight: bold;
+}
+
+.photo-ad{
+    flex: 1;
+    background-color: gold;
+}
+
+.socials{
+    margin-top: 30px;
+}
+
+.socials ul{
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+}
+
+.socials ul li{
+    text-decoration: none;
+    height: 35px;
+    width: 35px;
+    background-color: slategray;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.socials ul li i{
+    color: white;
+    padding: 8px;
+}
+
+.about{
+    margin-top: 180px;
+    margin-bottom: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+.left-about, .right-about{
+    flex: 1;
+}
+
+.about h1{
+    font-family: Libre Baskerville;
+    font-weight: 100;
+}
+
+.golden-line{
+    height: 3px;
+    width: 70px;
+    margin: 10px;
+    margin-left: 0px;
+    background-color: goldenrod;
+}
+
+.card{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    margin-left: 0;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #18191b;
+}
+
+.card img{
+    border-radius: 50%;
+    border: 3px solid goldenrod;
+}
+
+.card div div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pic1{
+    width: 500px;
+    border: 5px solid #242526;
+    border-radius: 10px;
+    display: block;
+}
+
+#pic2{
+    width: 300px;
+    border: 5px solid #242526;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.right-about{
+    display: flex;
+    align-items: center;
+}
+
+.pic-wrapper{
+    position: relative;
+}
+
+hr{    
+    height: 0.1px;
+    background-color: goldenrod;
+    margin-right: 70px;
+}
+
+.footer{
+    padding-top: 40px;
+    padding-right: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.left-footer{
+    flex: 2;
+}
+
+.footer-right-2, .footer-right-3, .footer-right-1{
+    flex: 1;
+}
+
+
+.footer-right-2 ul, .footer-right-3 ul, .footer-right-1 ul{
+    list-style-type: none;
+    color: rgb(159, 157, 157);
+    font-family: Raleway;
+    font-size: 14px;
+}
+
+.footer-right-2 ul li, .footer-right-3 ul li, .footer-right-1 ul li{
+    margin: 20px;
+}
+
+.list-head{
+    font-weight: bold;
+    color: white;
+    font-family: Libre Baskerville;
+}
+
+.left-footer .description-text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.round-btn{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: goldenrod;
+    font-family: Raleway;
+    font-size: small;
+}
+
+.gold-circle{
+    background-color: goldenrod;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-family: Libre Baskerville;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.achievements{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 85px;
+}
+
+.achievements ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.awrd-circle{
+    border: 1px solid white;
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.awrd-title{
+    font-size: large;
+    font-family: Libre Baskerville;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.awrd-desc{
+    text-align: center;
+    line-height: 1.5;
+    font-family: Raleway;
+    font-size: 13px;
+    color: rgb(203, 202, 202);
+    font-weight: 500;
+}
+
+.achievements2 ul{
+    display: flex;
+    list-style-type: none;
+    margin: 80px;
+}
+
+.ach-title{
+    font-size: 40px;
+    font-family: Libre Baskerville;
+    font-weight: 500;
+    display: block;
+}
+
+.ach-desc{
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 500;
+    display: block;
+}
+
+.achievements2 ul li div{
+    text-align: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.heading{
+    display: flex;
+}
+
+.heading .golden-line{
+    height: 2px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btns ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.menu-btns ul li{
+    margin: 10px;
+}
+
+.menu-card{
+    padding: 20px;
+    background-color: #414245;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.name-and-tag{
+    display: flex;
+    gap: 10px;
+}
+
+.dish-name, .tag{
+    margin: 0;
+}
+
+.dish-name{
+    font-size: 20px;
+}
+
+.menu-card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.tag{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: goldenrod;
+    border-radius: 25px;
+    display: inline;
+    font-size: 14px;
+}
+
+.copyright-details{
+    text-align: center;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Raleway;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.menu-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    margin-right: 80px;
+}
+
+.price{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-selection{
+    margin-bottom: 45px;
+}
+
+.up-btn{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: goldenrod;
+    font-family: Raleway;
+    font-size: small;
+    margin-left: -80px;
+    font-weight: bold;
+}
+
+.chefs-special{
+
+    margin-right: 70px;
+    margin-bottom: 80px;
+}
+
+.transp-btn{
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 100;
+    background-color: #414245;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 10px;
+    width: max-content;
+}
+
+.chefs-items{
+    display: flex;
+    gap: 40px;
+    padding: 15px;
+}
+
+.chefs-item{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #414245;
+    border-radius: 5px;
+    gap: 20px;
+    width: auto;
+}
+
+.chefs-item img{
+    width: auto;
+    height: 250px;
+}
+
+.testimonials-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-right: 75px;
+}
+
+.testimonial-card{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #414245;
+    border-radius: 5px;
+}
+
+.testimonial-card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial-cards{
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+}
+
+.desc-rating{
+    text-align: center;
+    font-style: italic;
+    font-family: Raleway;
+    line-height: 1.5;
+}
+
+.testimonial-card div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonial-title{
+    font-family: Libre Baskerville;
+    font-size: 20px;
+
+}
+
+.testimonial-desc{
+font-family: Libre Baskerville;
+    font-size: 15px;
+    color: rgb(182, 180, 180);
+}
+
+.chefs-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-right: 100px;
+}
+
+.chefs-grid-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas: 'executive pastry sous' 'executive hob grill';
+    grid-gap: 20px;
+    place-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.chefs-grid-item{
+    background-color: #242526;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+
+.chefs-grid-item img{
+    width: 350px;
+    border-radius: 10px;
+}
+
+
+.executive{
+    grid-area: executive;
+}
+
+.pastry{
+    grid-area: pastry;
+}
+
+.sous{
+    grid-area: sous;
+}
+
+.hob{
+    grid-area: hob;
+}
+
+.grill{
+    grid-area: grill;
+}
+
+.chef-details{
+    padding: 30px;
+}
+
+.chef-title{
+    color: goldenrod;
+    font-size: 20px;
+    font-family: Libre Baskerville;
+    margin: 5px;
+}
+
+.chef-name{
+    font-size: 25px;
+    font-family: Libre Baskerville;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.chef-details .transp-btn{
+    display: inline;
+    padding: 7px;
+    margin: 0;
+}
+
+.chef-details .chef-desc{
+    margin-top: 20px;
+    line-height: 1.5;
+    font-family: Raleway;
+}
+
+.book-your-table-section{
+    display: flex;
+    gap: 20px;
+    margin-right: 80px;
+}
+
+.byt-left h1{
+    font-family: Libre Baskerville;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.byt-left p{
+    font-family: Raleway;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.byt-left, .byt-right{
+    flex: 1;
+}
+
+.byt-right img{
+    width: 100%;
+}
+
+.table-details{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+    margin: 20px;
+}
+
+.table-details b{
+    font-size: 18px;
+    font-family: Libre Baskerville;
+}
+
+.table-details li{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.book-table-form{
+    
+    background-color: #242526;
+    padding: 40px;
+    margin-right: 85px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.book-table-form p{
+    font-family: Raleway;
+}
+
+.book-table-form h1{
+    font-family: Libre Baskerville;
+    margin: 10px;
+}
+
+.book-table-form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'name email phone' 'guests date time' 'requests requests requests';
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#name{
+    grid-area: name;
+}
+
+#email{
+    grid-area: email;
+}
+
+#phone{
+    grid-area: phone;
+}
+
+#guests{
+    grid-area: guests;
+}
+
+#date{
+    grid-area: date;
+}
+
+#time{
+    grid-area: time;
+}
+
+#requests{
+    grid-area: requests;
+}
+
+.book-table-input,textarea{
+    padding: 15px;
+    font-family: Raleway;
+    border-radius: 3px;
+    background-color: #242526;
+    color: white;
+    border: 1px solid rgb(136, 133, 133);
+}
+
+.book-btn, .book-desc{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.location-section{
+    display: flex;
+    flex-direction: column;
+    margin-right: 85px;
+    gap: 20px;
+}
+
+.location-section .heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map{
+    background-color: bisque;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.map-and-location{
+    display: flex;
+    gap: 40px;    
+}
+
+.location{
+    flex: 1;
+    background-color: #242526;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    border-radius: 10px;
+    font-family: Raleway;
+}
+
+.location h1,h2{
+    font-family: Libre Baskerville;
+}
+
+.location p{
+    font-family: Raleway;
+}
+
+.location ul{
+    list-style-type: none;
+}
+
+.location li{
+    margin: 18px;
+}
+
+.visit-us-item{
+    display: flex;
+    gap: 10px;
+}
+
+table .left{
+    text-align: left;
+}
+
+table .right{
+    text-align: right;
+}
+
+table td{
+    padding: 10px;
+}
+
+.visit-us-item div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.visit-us-item svg{
+    width: 20px;
+    height: 20px;
+    background-color: #414245;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.moments-section{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;    
+}
+
+.moments-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.moments-1 h1{
+    font-size: 40px;
+    font-family: Libre Baskerville;
+}
+
+.moments-1 .italic-text{
+    text-align: center;
+}
+
+.moments-2{
+    display: flex;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.moments-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #242526;
+    padding: 25px;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.moments-card h2{
+    font-size: 21px;
+}
+
+.moments-card p{
+    text-align: center;
+    font-family: Raleway;
+    color: #919297;
+}
+
+.moments-card svg{
+    height: 40px;
+    width: 40px;
+}
+
+.moments-card .circle-wrap{
+    height: 80px;
+  width: 80px;
+  background-color: #414245;
+  border-radius: 50%;          
+  display: flex;               
+  align-items: center;
+  justify-content: center;
+}
+
+.moments-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'big small-1'
+    'big small-2';
+  gap: 20px;
+  height: 400px; /* or whatever height you want */
+}
+
+#big {
+  grid-area: big;
+  background-image: url('https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/restaurant/event-1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#small-1 {
+  grid-area: small-1;
+  background-image: url('https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/restaurant/event-5.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+#small-2 {
+  grid-area: small-2;
+  background-image: url('https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/restaurant/event-7.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.moments-4{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #242526;
+    border-radius: 20px;
+}
+
+.text-plan{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+.text-plan h1{
+    font-family: Libre Baskerville;
+    margin: 20px;
+}
+
+.text-plan p{
+    font-family: Raleway;
+    color: #919297;
+    line-height: 1.7;
+    margin: 20px;
+    margin-top: 0;
+}
+
+.button-plan{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-plan .round-btn{
+    display: inline-block;
+    
+}
+
+.events-section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 80px;
+}
+
+.events-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.events-1 h1{
+    font-family: Libre Baskerville;
+}
+
+.events-2{
+    display: flex;
+    gap: 30px;
+    flex: 1;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.event-card{
+    display: flex;
+    max-width: 540px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  width: 100%;
+  background-color: #454647;
+}
+
+.event-card img{
+    width: 180px;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Raleway;
+  align-items: left;
+  gap: 20px;
+  margin: 20px;
+}
+
+
+.event-details h1 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-family: Libre Baskerville;
+}
+
+.event-details table {
+  font-size: 14px;
+  color: #666;
+}
+
+.time-and-place{
+    display: flex;
+    gap: 10px;
+}
+
+.event-details .explore-menu{
+    display: inline-block;
+    width: fit-content;
+    padding: 13px;
+    border-radius: 25px;
+}
+
+.contact-section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 30px;
+
+}
+
+.contact-section .heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1{
+    font-family: Libre Baskerville;
+}
+
+.contact-cards-container{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.contact-card{
+    display: flex;
+    gap: 15px;
+    background-color: #414245;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-card .img-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #76777a;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.contact-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: left;
+}
+
+.contact-desc h2{
+    font-family: Libre Baskerville;
+    font-size: 20px;
+}
+
+.contact-desc p{
+    font-family: Raleway;
+    font-size: 15px;
+    color: #b4b5ba;
+}
