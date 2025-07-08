@@ -19,19 +19,19 @@
     <div class="nav-menu">
       <ul class="nav-menu__list">
         <li><a href="" class="nav-menu__link nav-menu__logo"><span class="nav-menu__icon">🍴</span>NiceRestaurant</a></li>
-        <li><a href="" class="nav-menu__link">Home</a></li>
-        <li><a href="" class="nav-menu__link">About</a></li>
-        <li><a href="" class="nav-menu__link">Menu</a></li>
-        <li><a href="" class="nav-menu__link">Book a Table</a></li>
-        <li><a href="" class="nav-menu__link">Chefs</a></li>
-        <li><a href="" class="nav-menu__link">Events</a></li>
+        <li><a href="#home-section" class="nav-menu__link">Home</a></li>
+        <li><a href="#about-section" class="nav-menu__link">About</a></li>
+        <li><a href="#menu-section" class="nav-menu__link">Menu</a></li>
+        <li><a href="#book-table-section" class="nav-menu__link">Book a Table</a></li>
+        <li><a href="#chefs-section" class="nav-menu__link">Chefs</a></li>
+        <li><a href="#events-section" class="nav-menu__link">Events</a></li>
         <li><a href="" class="nav-menu__link">Dropdown</a></li>
-        <li><a href="" class="nav-menu__link">Contacts</a></li>
-        <li><a href="" class="nav-menu__link"><div class="round-btn">Book a Table</div></a></li>
+        <li><a href="#contacts-section" class="nav-menu__link">Contacts</a></li>
+        <li><a href="#book-table-section" class="nav-menu__link"><div class="round-btn">Book a Table</div></a></li>
       </ul>
     </div>
 
-    <div class="home">
+    <div class="home" id="home-section">
         <div class="home__reservations-sub">
             RESERVATIONS OPEN
         </div>
@@ -51,7 +51,18 @@
                 </div>
             </div>
             <div class="home__ad__photo-ad">
-                Savor the Moment, One Bite at a Time
+                <div class="slider-wrapper">
+    <div class="slider">
+      <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/restaurant/misc-square-1.webp" alt="" id="slide1">
+      <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/restaurant/misc-square-2.webp" alt="" id="slide2">
+      <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/restaurant/misc-square-3.webp" alt="" id="slide3">
+    </div>
+    <div class="slider-nav">
+      <a href="#slide1"></a>
+      <a href="#slide2"></a>
+      <a href="#slide3"></a>
+    </div>
+  </div>
             </div>
         </div>
 
@@ -66,7 +77,7 @@
 
     </div>
 
-    <div class="about">
+    <div class="about" id="about-section">
         <div class="left-about">
             <h1>Our Culinary Journey</h1>
             <div class="golden-line"></div>
@@ -107,7 +118,10 @@
             <ul>
                 <li>
                     <div class="cir-item">
-                        <div class="awrd-circle">R</div>
+                        <div class="awrd-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+  <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+  <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+</svg></div>
                         <p class="awrd-title">Award Winning</p>
                         <p class="awrd-desc">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. <br>Suspendisse varius enim in eros.</p>
                     </div>
@@ -115,7 +129,10 @@
 
                 <li>
                     <div class="cir-item">
-                        <div class="awrd-circle">R</div>
+                        <div class="awrd-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+  <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+  <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+</svg></div>
                         <p class="awrd-title">Fresh Ingredients</p>
                         <p class="awrd-desc">Duis aute irure dolor in reprehenderit <br> in voluptate velit esse cillum dolore <br> eu fugiat nulla.</p>
                     </div>
@@ -123,7 +140,9 @@
 
                 <li>
                     <div class="cir-item">
-                        <div class="awrd-circle">R</div>
+                        <div class="awrd-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+</svg></div>
                         <p class="awrd-title">Expert Team</p>
                         <p class="awrd-desc">Excepteur sint occaecat cupidatat <br> non proident, sunt in culpa qui officia <br> deserunt mollit.</p>
                     </div>
@@ -131,7 +150,9 @@
 
                 <li>
                     <div class="cir-item">
-                        <div class="awrd-circle">R</div>
+                        <div class="awrd-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+</svg></div>
                         <p class="awrd-title">Cooked with Love</p>
                         <p class="awrd-desc">Ut enim ad minim veniam, quis <br> nostrud exercitation ullamco laboris <br> nisi ut aliquip ex ea commodo.</p>
                     </div>
@@ -175,7 +196,7 @@
     <hr>
 
 
-        <div class="menu-section">
+        <div class="menu-section" id="menu-section">
 
             <div class="heading">
                 <div class="golden-line"></div>
@@ -257,7 +278,7 @@
             </div>
         </div>
 
-         <div class="chefs-special">
+         <div class="chefs-special" >
                 <div class="transp-btn">
                     <h3>Chef's Specials</h3>
                 </div>
@@ -310,20 +331,20 @@
 <div class="testimonial-card">
                 <div class="star-rating">⭐⭐⭐⭐⭐</div>
                 <div class="desc-rating">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestiae tempora ad ullam quia distinctio fugit laudantium enim, nisi.</div>
-                <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/person/person-f-5.webp" alt="">
+                <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/person/person-f-12.webp" alt="">
                 <div>
-                    <p class="testimonial-title">Sara Wilsson</p>
-                <p class="testimonial-desc">Designer</p>
+                    <p class="testimonial-title">Pattie Brandon</p>
+                <p class="testimonial-desc">Freelancer</p>
                 </div>
             </div>
 
             <div class="testimonial-card">
                 <div class="star-rating">⭐⭐⭐⭐⭐</div>
                 <div class="desc-rating">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestiae tempora ad ullam quia distinctio fugit laudantium enim, nisi.</div>
-                <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/person/person-f-5.webp" alt="">
+                <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/person/person-m-12.webp" alt="">
                 <div>
-                    <p class="testimonial-title">Sara Wilsson</p>
-                <p class="testimonial-desc">Designer</p>
+                    <p class="testimonial-title">John Larson</p>
+                <p class="testimonial-desc">Entreprenur</p>
                 </div>
             </div>
 
@@ -336,7 +357,7 @@
     </div>
 
 
-    <div class="chefs-section">
+    <div class="chefs-section" id="chefs-section">
          <div class="heading">
                 <div class="golden-line"></div>
                 <h1>Chefs</h1>
@@ -402,7 +423,7 @@
 
     </div>
 
-    <div class="book-your-table-section">
+    <div class="book-your-table-section" id="book-table-section">
         <div class="byt-left">
             <h1>Book Your Table</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Aliquam erat volutpat.</p>
@@ -461,7 +482,7 @@
 
     </div>
 
-    <div class="book-table-form">
+    <div class="book-table-form" >
         <div class="book-desc">
             <h1>Book A Table</h1>
             <p>Please fill the form below to make a reservation</p>
@@ -487,7 +508,7 @@
                 
             </div>
             <div class="book-btn">
-                <div class="round-btn">BOOK NOW</div>
+                <div class="round-btn">Send Message</div>
             </div>
             
 
@@ -514,6 +535,7 @@
 
             <div class="map-and-location">
                 <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96780.77389411269!2d-74.1510951566406!3d40.70922810000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b3838127ca3%3A0xf7e13a313d0751aa!2s123%20Market%20Place!5e0!3m2!1sen!2sin!4v1751976497812!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </div>
                 <div class="location">
@@ -667,7 +689,7 @@
         
     </div>
 
-    <div class="events-section">
+    <div class="events-section" id="events-section">
         <div class="events-1">
             <h1>Upcoming Featured Events</h1>
             <div class="golden-line"></div>
@@ -719,7 +741,7 @@
     </div>
 
 
-    <div class="contact-section">
+    <div class="contact-section" id="contacts-section">
         <div class="heading-container">
             <div class="heading">
                 <div class="golden-line"></div>
@@ -767,6 +789,43 @@
         </div>
 
 
+
+    </div>
+
+    <div class="big-map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d96779.56628236092!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown.%20Conference%20Center!5e0!3m2!1sen!2sus!4v1751976868624!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="get-in-touch-section">
+
+
+        <div class="get-in-touch-form">
+               <form action="">
+                <div class="heading-container">
+                        <div class="heading">
+                <div class="golden-line"></div>
+                <h1>Get in Touch</h1>
+                <div class="golden-line"></div>
+            </div>
+                </div>
+                 
+            <div class="book-table-form-container">
+                
+                <input type="text" id="name" class="book-table-input" placeholder="Your Name">
+                <input type="text" id="email" class="book-table-input" placeholder="Your Email">
+                <input type="text" id="phone" class="book-table-input" placeholder="Subject">
+                <textarea id="requests" name="message" rows="5" cols="40" placeholder="Write Message..."></textarea>
+
+                
+            </div>
+            <div class="book-btn">
+                <div class="round-btn">BOOK NOW</div>
+            </div>
+            
+
+        </form>
+        </div>
+        
 
     </div>
 
@@ -821,9 +880,8 @@
         </div>
 
     </div>
-
+    <script src="eg1.js"></script>
     
 
-    
 </body>
 </html>
