@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dropdown with Dropleft</title>
+  <style>
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Submenu (dropleft) */
+    .dropleft {
+      position: relative;
+    }
+
+    .dropleft-content {
+      display: none;
+      position: absolute;
+      left: 100%; /* opens to the right */
+      top: 0;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+    }
+
+    .dropleft:hover .dropleft-content {
+      display: block;
+    }
+
+    .dropleft-content a:hover {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+
+    <div class="dropdown">
+      <a href="#">Services ▼</a>
+      <div class="dropdown-content">
+        <a href="#">Web Design</a>
+        <a href="#">SEO</a>
+
+        <div class="dropleft">
+          <a href="#">Development ▶</a>
+          <div class="dropleft-content">
+            <a href="#">Frontend</a>
+            <a href="#">Backend</a>
+            <a href="#">Fullstack</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <a href="#">Contact</a>
+  </div>
+
+</body>
+</html>

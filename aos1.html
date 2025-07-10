@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS eg</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .cards{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 150px;
+            margin: 20px;
+            background-color: cadetblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    
+</head>
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <h1 data-aos="flip-down" data-aos-duration="1000"> Hello guysss! </h1>
+
+    <div class="cards">
+        <div class="card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+            Card 1
+        </div>
+
+        <div class="card"  data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100">
+            Card 1
+        </div>
+
+        <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+            Card 1
+        </div>
+
+        <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
+            Card 1
+        </div>
+
+        <div class="card" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="100">
+            Card 1
+        </div>
+
+        <div class="card">
+            Card 1
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

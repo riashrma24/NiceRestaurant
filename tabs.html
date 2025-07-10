@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #cbab7c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Raleway;
+  transition: filter 0.3s ease;
+}
+
+.tab-btn:hover {
+  filter: brightness(85%);
+}
+
+.tab-btn.active {
+  background-color: #a08861; /* slightly dimmed */
+}
+
+.tab-card {
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: #414245;
+  border-radius: 10px;
+  font-family: Raleway;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="tab-buttons">
+  <button class="tab-btn active" data-tab="all">All</button>
+  <button class="tab-btn" data-tab="1">Tab 1</button>
+  <button class="tab-btn" data-tab="2">Tab 2</button>
+  <button class="tab-btn" data-tab="3">Tab 3</button>
+</div>
+
+<div class="cards-container">
+  <div class="tab-card" data-tab="1">Card 1 - A</div>
+  <div class="tab-card" data-tab="1">Card 1 - B</div>
+
+  <div class="tab-card" data-tab="2">Card 2 - A</div>
+  <div class="tab-card" data-tab="2">Card 2 - B</div>
+
+  <div class="tab-card" data-tab="3">Card 3 - A</div>
+</div>
+
+    <script>
+  const buttons = document.querySelectorAll('.tab-btn');
+  const cards = document.querySelectorAll('.tab-card');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Update button active class
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const tab = button.getAttribute('data-tab');
+
+      cards.forEach(card => {
+        if (tab === 'all' || card.getAttribute('data-tab') === tab) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

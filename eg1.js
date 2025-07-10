@@ -1,11 +1,23 @@
-  const slider = document.querySelector('.slider');
-  const images = slider.querySelectorAll('img');
-  let index = 0;
+const tabButtons = document.querySelectorAll('.menu-btns .round-btn');
+  const cards = document.querySelectorAll('.menu-card');
+  console.log(tabButtons);
 
-  setInterval(() => {
-    console.log(images.length);
-    index = (index + 1) % images.length;
-    slider.style.transform = `translateX(-${index * 100}%)`;
-    slider.style.transition = 'transform 1s ease-in-out';
-  }, 3000); 
 
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      const tab = button.getAttribute('data-tab');
+
+      cards.forEach(card => {
+        if (tab === 'all' || card.getAttribute('data-tab') === tab) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  window.addEventListener('load', () => { AOS.init(); });
