@@ -439,9 +439,19 @@ hr {
   border: 1px solid gray;
   height: 35px;
   width: 35px;
+  transition: transform 0.3s ease;
 }
 .left-footer .socials li svg {
   color: gray;
+  transition: transform 0.3s ease;
+}
+.left-footer .socials li svg:hover {
+  color: #cbab7c;
+}
+.left-footer .socials li:hover {
+  background-color: #0C0D11;
+  color: #cbab7c;
+  border: 1px solid #cbab7c;
 }
 
 .footer-right-2, .footer-right-3, .footer-right-1 {
@@ -462,6 +472,10 @@ hr {
 .footer-right-2 ul li a, .footer-right-3 ul li a, .footer-right-1 ul li a {
   color: rgb(159, 157, 157);
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.footer-right-2 ul li a:hover, .footer-right-3 ul li a:hover, .footer-right-1 ul li a:hover {
+  color: #cbab7c;
 }
 
 .list-head {
@@ -1339,6 +1353,11 @@ table td {
 
 .button-plan .round-btn {
   display: inline-block;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+.button-plan .round-btn:hover {
+  transform: translateY(-8px);
 }
 
 .events-section {
@@ -1471,7 +1490,7 @@ table td {
   transition: transform 0.3s ease;
 }
 .contact-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px) !important;
 }
 
 .contact-card .img-div {

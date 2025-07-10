@@ -517,8 +517,20 @@ hr{
         width: 35px;
         svg{
             color: gray;
+            transition: transform 0.3s ease;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        transition: transform 0.3s ease;
+        &:hover{
+        background-color: #0C0D11;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+
         }
     }
+    
 }
 
 
@@ -541,6 +553,10 @@ hr{
 .footer-right-2 ul li a, .footer-right-3 ul li a, .footer-right-1 ul li a{
     color: rgb(159, 157, 157);
     text-decoration: none;
+    transition: transform 0.3s ease;
+    &:hover{
+        color: $primary-color;
+    }
 }
 
 .list-head{
@@ -1343,6 +1359,7 @@ table td{
   svg{
     color: $primary-color;
   }
+  
 }
 
 .moments-3 {
@@ -1434,6 +1451,11 @@ table td{
 
 .button-plan .round-btn{
     display: inline-block;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    &:hover{
+        transform: translateY(-8px);
+    }
     
 }
 
@@ -1561,7 +1583,7 @@ table td{
     border-radius: 10px;
     transition: transform 0.3s ease;
     &:hover{
-        transform: translateY(-10px);
+        transform: translateY(-10px) !important;
     }
 }
 
