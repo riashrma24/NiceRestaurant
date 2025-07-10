@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Testimonials Carousel</title>
+  <style>
+    body {
+      font-family: Raleway, sans-serif;
+      background: #fdfdfd;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .testimonials-section {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .testimonial-carousel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 400px;
+    }
+
+    .testimonial-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .testimonial-card {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 30px;
+      background: #144f4a;
+      color: white;
+      border-radius: 10px;
+    }
+
+    .testimonial-card img {
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px 0;
+    }
+
+    .star-rating {
+      font-size: 1.2rem;
+      color: gold;
+    }
+
+    .desc-rating {
+      font-style: italic;
+      margin: 15px 0;
+    }
+
+    .testimonial-title {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .testimonial-desc {
+      color: #ccc;
+    }
+
+    .carousel-btn {
+      margin-top: 20px;
+    }
+
+    .carousel-btn button {
+      background-color: #144f4a;
+      color: white;
+      border: 1px solid white;
+      padding: 8px 16px;
+      cursor: pointer;
+      margin: 0 5px;
+      border-radius: 5px;
+    }
+
+    .carousel-btn button:hover {
+      background-color: white;
+      color: #144f4a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="testimonials-section">
+    <h2>Testimonials</h2>
+    <p>What our customers say about us</p>
+
+    <div class="testimonial-carousel">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+          <div class="desc-rating">The best dining experience I’ve ever had!</div>
+          <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/person/person-f-5.webp" alt="">
+          <p class="testimonial-title">Sara Wilsson</p>
+          <p class="testimonial-desc">Designer</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+          <div class="desc-rating">Absolutely loved the food and the ambiance!</div>
+          <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/person/person-f-12.webp" alt="">
+          <p class="testimonial-title">Pattie Brandon</p>
+          <p class="testimonial-desc">Freelancer</p>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="star-rating">⭐⭐⭐⭐⭐</div>
+          <div class="desc-rating">Great service and fresh ingredients!</div>
+          <img src="https://bootstrapmade.com/content/demo/NiceRestaurant/assets/img/person/person-m-12.webp" alt="">
+          <p class="testimonial-title">John Larson</p>
+          <p class="testimonial-desc">Entrepreneur</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-btn">
+      <button onclick="prevTestimonial()">← Prev</button>
+      <button onclick="nextTestimonial()">Next →</button>
+    </div>
+  </div>
+
+  <script>
+    let currentIndex = 0;
+    const track = document.getElementById('testimonialTrack');
+    const totalCards = track.children.length;
+
+    function updateCarousel() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextTestimonial() {
+      currentIndex = (currentIndex + 1) % totalCards;
+      updateCarousel();
+    }
+
+    function prevTestimonial() {
+      currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+      updateCarousel();
+    }
+  </script>
+</body>
+</html>

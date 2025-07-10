@@ -27,6 +27,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  cursor: pointer;
+}
+
 .main-container {
   margin-left: 80px;
 }
@@ -305,26 +309,33 @@ body {
 .socials ul {
   list-style-type: none;
   display: flex;
-  gap: 45px;
+  gap: 15px;
 }
 
 .socials ul li {
   text-decoration: none;
-  height: 35px;
-  width: 35px;
-  background-color: slategray;
-  text-align: center;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
+  background-color: #252a2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.3s ease;
 }
 .socials ul li:hover {
   transform: translateY(-10px);
   background-color: #cbab7c;
 }
+.socials ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.socials ul li i {
+.socials ul li svg {
   color: white;
-  padding: 8px;
 }
 
 .about {
@@ -413,11 +424,23 @@ hr {
 
 .left-footer {
   flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 .left-footer h1 {
   font-family: Libre Baskerville;
   font-weight: 100;
   color: white;
+}
+
+.left-footer .socials li {
+  background-color: #0C0D11;
+  border: 1px solid gray;
+  height: 35px;
+  width: 35px;
+}
+.left-footer .socials li svg {
+  color: gray;
 }
 
 .footer-right-2, .footer-right-3, .footer-right-1 {
@@ -426,13 +449,18 @@ hr {
 
 .footer-right-2 ul, .footer-right-3 ul, .footer-right-1 ul {
   list-style-type: none;
-  color: rgb(159, 157, 157);
+  color: #fff;
   font-family: Raleway;
   font-size: 14px;
 }
 
 .footer-right-2 ul li, .footer-right-3 ul li, .footer-right-1 ul li {
   margin: 20px;
+}
+
+.footer-right-2 ul li a, .footer-right-3 ul li a, .footer-right-1 ul li a {
+  color: rgb(159, 157, 157);
+  text-decoration: none;
 }
 
 .list-head {
@@ -573,6 +601,7 @@ hr {
 
 .menu-btns .round-btn {
   background-color: #252a2b;
+  cursor: pointer;
   font-weight: 700;
   transition: transform 0.3s ease;
 }
@@ -689,7 +718,7 @@ hr {
   color: #cbab7c;
   font-weight: bold;
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .menu-selection {
@@ -697,6 +726,7 @@ hr {
 }
 
 .up-btn {
+  cursor: pointer;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -711,7 +741,7 @@ hr {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 .up-btn:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px) !important;
   filter: brightness(80%);
 }
 
@@ -730,6 +760,11 @@ hr {
   margin: 10px;
   width: -moz-max-content;
   width: max-content;
+  display: flex;
+  gap: 6px;
+}
+.transp-btn svg {
+  color: #cbab7c;
 }
 
 .chefs-items {
@@ -1036,6 +1071,12 @@ hr {
   margin: 30px;
 }
 
+.book-btn .round-btn {
+  border-radius: 10px;
+  padding: 20px 40px;
+  font-size: 16px;
+}
+
 .location-section {
   display: flex;
   flex-direction: column;
@@ -1098,6 +1139,9 @@ hr {
 .visit-us-item {
   display: flex;
   gap: 10px;
+}
+.visit-us-item svg {
+  color: #cbab7c;
 }
 
 table .left {
@@ -1198,6 +1242,9 @@ table td {
   align-items: center;
   justify-content: center;
 }
+.moments-card .circle-wrap svg {
+  color: #cbab7c;
+}
 
 .moments-3 {
   display: grid;
@@ -1254,7 +1301,7 @@ table td {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  background-color: #242526;
+  background-color: rgba(50, 35, 2, 0.6745098039);
   border-radius: 20px;
 }
 
@@ -1429,10 +1476,14 @@ table td {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background-color: #76777a;
+  background-color: rgba(49, 50, 51, 0.6156862745);
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+.contact-card .img-div svg {
+  color: #cbab7c;
+  height: 25px;
 }
 
 .contact-desc {
