@@ -1569,7 +1569,7 @@ table td {
 }
 
 .magic-btn:hover {
-  transform: translateY(-5px); /* move up */
-  box-shadow: 0 20px 30px -10px white; /* white shadow below */
-  background: linear-gradient(50deg, #cbab7c, #eedbbf); /* subtle shine */
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -10px white;
+  background: linear-gradient(50deg, #cbab7c, #eedbbf);
 }/*# sourceMappingURL=style.css.map */
