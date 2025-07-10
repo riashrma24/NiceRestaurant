@@ -171,6 +171,7 @@ a {
 .home__ad__text-ad__open-timing i {
   margin-right: 10px;
   height: 30px;
+  color: #cbab7c;
 }
 .home__ad__text-ad__home-btns {
   display: flex;
@@ -988,6 +989,9 @@ hr {
   gap: 20px;
   margin: 20px;
 }
+.table-details li div svg {
+  color: #cbab7c;
+}
 
 .table-details b {
   font-size: 18px;
@@ -1071,7 +1075,7 @@ hr {
   margin: 30px;
 }
 
-.book-btn .round-btn {
+#last-btn {
   border-radius: 10px;
   padding: 20px 40px;
   font-size: 16px;
@@ -1558,4 +1562,14 @@ table td {
 #goto {
   color: white;
   z-index: 99;
+}
+
+.magic-btn {
+  transition: transform 0.3s ease;
+}
+
+.magic-btn:hover {
+  transform: translateY(-5px); /* move up */
+  box-shadow: 0 20px 30px -10px white; /* white shadow below */
+  background: linear-gradient(50deg, #cbab7c, #eedbbf); /* subtle shine */
 }/*# sourceMappingURL=style.css.map */
